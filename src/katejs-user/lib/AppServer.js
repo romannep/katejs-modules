@@ -1,5 +1,4 @@
-import { use } from 'katejs';
-import { apiUrl } from 'katejs/lib/http';
+import { use, apiUrl } from 'katejs';
 import jwt from 'koa-jwt';
 import Router from 'koa-router';
 import User from './entities/User';

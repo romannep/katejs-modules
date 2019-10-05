@@ -1,6 +1,6 @@
 {
   "name": "katejs-modules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "scripts": {
     "build-client": "webpack --config webpack.client.js --progress --profile --bail",
@@ -43,7 +43,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^8.4.0",
-    "katejs": "^1.0.20",
+    "katejs": "^1.0.21",
     "koa-jwt": "^3.5.1"
   }
 }

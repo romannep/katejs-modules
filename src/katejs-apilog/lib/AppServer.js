@@ -1,5 +1,4 @@
-import { makeEntitiesFromStructures, use } from 'katejs';
-import { apiUrl } from 'katejs/lib/http';
+import { makeEntitiesFromStructures, use, apiUrl } from 'katejs';
 import Router from 'koa-router';
 import { packageName, structures } from './structure';
 
