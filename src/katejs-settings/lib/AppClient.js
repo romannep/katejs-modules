@@ -19,9 +19,16 @@ const AppClient = parent => class Client extends use(parent, AppUser) {
       },
       icon: icons.Settings,
     });
+    this.settings = {};
   }
   async afterInit() {
     if (super.afterInit) super.afterInit();
+    const { response: settings } = await this.Settings.get();
+    this.settings = settings;
+  }
+  // reload settings on user auth
+  async successAuth(params) {
+    super.successAuth(params);
     const { response: settings } = await this.Settings.get();
     this.settings = settings;
   }
