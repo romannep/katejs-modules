@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "handlebars": "^4.4.3",
     "jsonwebtoken": "^8.4.0",
     "katejs": "^1.0.22",
     "koa-jwt": "^3.5.1"
