@@ -58,6 +58,11 @@ const AppServer = parent => class Server extends use(parent) {
         method: 'profile',
         access: true,
       },
+      {
+        entity: 'User',
+        method: 'activate',
+        access: true,
+      },
     ];
     this.accessRules = [];
     this.userTokenFields = [];
