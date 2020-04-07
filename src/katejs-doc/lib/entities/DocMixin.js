@@ -10,7 +10,6 @@ const DocMixin = Entity => class DocEntity extends Entity {
   }
   async put(params) {
     // TODO - own transaction;
-    const { date } = params.data.body;
     if (!params.data.body.number) {
       const { response: max } = await this.query({
         ctx: params.ctx,
@@ -27,10 +26,6 @@ const DocMixin = Entity => class DocEntity extends Entity {
       // eslint-disable-next-line no-param-reassign
       params.data.body.number = maxNumber + 1;
     }
-    // date can be missed. title set moved to beforePut
-    // const { number } = params.data.body;
-    // // eslint-disable-next-line no-param-reassign
-    // params.data.body.title = this.app.t`${this.app.t(this.constructor.docName)} №${number} from ${moment(date).format('DD.MM.YYYY HH:mm')}`;
     return super.put(params);
   }
   async beforePut({ savedEntity, body, transaction, ctx }) {
@@ -47,8 +42,8 @@ const DocMixin = Entity => class DocEntity extends Entity {
     if (this.makeRecords && this.constructor.records) {
       const recordsRegs = this.constructor.records;
       const clearPromises = [];
-      recordsRegs.forEach(recordsReg =>
-        clearPromises.push(this.app[recordsReg][model].destroy({
+      recordsRegs.forEach(recordsReg => clearPromises
+        .push(this.app[recordsReg][model].destroy({
           where: { docUuid: doc.uuid },
           transaction,
         })));
@@ -63,10 +58,7 @@ const DocMixin = Entity => class DocEntity extends Entity {
           docTitle: doc.title,
           ...record,
         }));
-        // need to use put to process hooks like serviceAccount
-        // promises.push(this.app[recordEntity][model].bulkCreate(records, { transaction }));
-        records.forEach(record => promises.push(this.app[recordEntity]
-          .put({ data: { body: record }, transaction, ctx })));
+        promises.push(this.app[recordEntity].recordsPut({ records, transaction }));
       });
       await Promise.all(promises);
     }
@@ -75,8 +67,8 @@ const DocMixin = Entity => class DocEntity extends Entity {
     if (this.makeRecords && this.constructor.records) {
       const recordsRegs = this.constructor.records;
       const clearPromises = [];
-      recordsRegs.forEach(recordsReg =>
-        clearPromises.push(this.app[recordsReg][model].destroy({
+      recordsRegs.forEach(recordsReg => clearPromises
+        .push(this.app[recordsReg][model].destroy({
           where: { docUuid: data.uuid },
           transaction: t,
         })));
