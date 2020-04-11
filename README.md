@@ -12,4 +12,5 @@
 - add handlebars as dep 
 - user activation
 
+[0.0.8]
 2020-04-07 [Doc] before/after RecordsPut
