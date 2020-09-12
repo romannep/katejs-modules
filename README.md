@@ -13,4 +13,7 @@
 - user activation
 
 [0.0.8]
-2020-04-07 [Doc] before/after RecordsPut
+- 2020-04-07 [Doc] before/after RecordsPut
+
+[0.0.9]
+- 2020-09-12 [User] fix menu visibility bug
