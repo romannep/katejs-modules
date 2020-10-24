@@ -10,6 +10,9 @@
 [0.0.9]
 - 2020-09-12 [User] fix menu visibility bug
 
+[0.0.10]
+- 2020-10-24 [Settings] fix save bug
+
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-modules/blob/master/LICENSE)
 
