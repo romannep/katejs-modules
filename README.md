@@ -13,6 +13,10 @@
 [0.0.10]
 - 2020-10-24 [Settings] fix save bug
 
+[0.0.11]
+- 2020-10-26 [Doc] fix super before put
+- 2020-10-26 [Settings] fix double get
+
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-modules/blob/master/LICENSE)
 
