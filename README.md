@@ -17,6 +17,9 @@
 - 2020-10-26 [Doc] fix super before put
 - 2020-10-26 [Settings] fix double get
 
+[0.0.12]
+- 2020-11-06 [User] single renew request
+
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-modules/blob/master/LICENSE)
 
