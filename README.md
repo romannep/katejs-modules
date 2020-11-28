@@ -21,6 +21,9 @@
 - 2020-11-06 [User] single renew request
 - 2020-11-07 [User] fix open menu to keep search on reload
 
+[0.0.15]
+- 2020-11-28 [Files] new module 
+
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-modules/blob/master/LICENSE)
 
