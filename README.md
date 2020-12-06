@@ -22,7 +22,10 @@
 - 2020-11-07 [User] fix open menu to keep search on reload
 
 [0.0.15]
-- 2020-11-28 [Files] new module 
+- 2020-11-28 [Files] new module
+
+[0.0.18]
+- 2020-12-06 [User] await afterUserInit 
 
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-modules/blob/master/LICENSE)
