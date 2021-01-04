@@ -27,6 +27,9 @@
 [0.0.18]
 - 2020-12-06 [User] await afterUserInit 
 
+[0.0.19]
+- 2021-01-05 [User] render menu fix, user select on auth
+
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-modules/blob/master/LICENSE)
 
