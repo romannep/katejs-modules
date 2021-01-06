@@ -59,6 +59,12 @@ module.exports = function (env) {
           options: {
             cacheDirectory: true,
             cacheCompression: false,
+            "presets": [
+              [
+                "@babel/preset-env",
+                { "targets": "last 2 versions, ie 11", "modules": false },
+              ],
+            ],
           },
         },
         {
