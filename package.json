@@ -1,6 +1,6 @@
 {
   "name": "katejs-modules",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "main": "lib/index.js",
   "scripts": {
     "build-client": "webpack --config webpack.client.js --progress --profile --bail",

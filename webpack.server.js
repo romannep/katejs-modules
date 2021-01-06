@@ -42,7 +42,22 @@ module.exports = function (env) {
     module: {
       rules: [
         /* { test: /fields\.js$/, loader: 'file-loader', options: { name: '[name].[ext]' } }, */
-        { test: /\.js$/, loader: 'babel-loader' },
+        {
+          test: /\.js$/,
+          loader: 'babel-loader',
+          options: {
+            "presets": [
+              [
+                "@babel/preset-env",
+                {
+                  "targets": {
+                    "node": true
+                  }
+                }
+              ],
+            ],
+          }
+        },
       ],
     },
   };
