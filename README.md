@@ -31,6 +31,9 @@
 - 2021-01-05 [User] render menu fix, user select on auth
 - 2021-01-06 [User] hide recovery ability
 
+[0.0.27]
+- 2021-02-09 [User] fix filter submenu
+
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-modules/blob/master/LICENSE)
 
